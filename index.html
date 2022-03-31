@@ -6,12 +6,21 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Document</title>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
       <style>
-         body {
-            background-color: black;
+         *{
+            margin: 0;
+            padding: 0;
+            outline: 0;
+            box-sizing: border-box;
+         }
+         nav {
+            padding:20px;
+            background-color: #222;
          }
 
          .contact-cta {
@@ -282,13 +291,15 @@
             -o-transform: scaleX(1.5);
             transform: scaleX(1.5)
          }
-         .contact-cta i.arrow{
+
+         .contact-cta i.arrow {
             transition: all .4s ease-out;
             display: inline-block;
             transform-origin: left;
             line-height: 100%;
          }
-         .contact-cta:hover i.arrow{
+
+         .contact-cta:hover i.arrow {
             transform: scaleX(1.2);
          }
 
@@ -344,23 +355,25 @@
    </head>
 
    <body>
-      <a class="contact-cta" href="https://pipixels.com">
-         <span class="contact-cta-word">
-            <span class="letter_1">G</span>
-            <span class="letter_2">e</span>
-            <span class="letter_3">t</span>
-            <span class="letter_4"> </span>
-            <span class="letter_5">i</span>
-            <span class="letter_6">n</span>
-            <span class="letter_7"> </span>
-            <span class="letter_8">t</span>
-            <span class="letter_9">o</span>
-            <span class="letter_10">u</span>
-            <span class="letter_11">c</span>
-            <span class="letter_12">h</span>
-         </span>
-         <i class="arrow fas fa-long-arrow-right"></i>
-      </a>
+      <nav>
+         <a class="contact-cta" href="https://pipixels.com">
+            <span class="contact-cta-word">
+               <span class="letter_1">G</span>
+               <span class="letter_2">e</span>
+               <span class="letter_3">t</span>
+               <span class="letter_4"> </span>
+               <span class="letter_5">i</span>
+               <span class="letter_6">n</span>
+               <span class="letter_7"> </span>
+               <span class="letter_8">t</span>
+               <span class="letter_9">o</span>
+               <span class="letter_10">u</span>
+               <span class="letter_11">c</span>
+               <span class="letter_12">h</span>
+            </span>
+            <i class="arrow fas fa-long-arrow-right"></i>
+         </a>
+      </nav>
    </body>
 
 </html>
