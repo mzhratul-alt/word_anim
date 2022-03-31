@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+      <style>
+         body {
+            background-color: black;
+         }
+
+         .contact-cta {
+            font-family: "Tahoma", Sans-serif;
+            font-size: 24px;
+            font-weight: 900;
+            text-decoration: none;
+            color: #fff;
+            line-height: 100%;
+            white-space: nowrap;
+            -webkit-transition: -webkit-transform .8s cubic-bezier(0.25, 1, 0.25, 1);
+            -moz-transition: -moz-transform .8s cubic-bezier(0.25, 1, 0.25, 1);
+            transition: transform .8s cubic-bezier(0.25, 1, 0.25, 1);
+            display: inline-block;
+         }
+
+         .contact-cta .contact-cta-word {
+            display: inline-block;
+            position: relative;
+            padding-right: 10px
+         }
+
+
+         .contact-cta:hover .contact-cta-word span:nth-child(1n+1) {
+            -webkit-transition: none;
+            -moz-transition: none;
+            transition: none;
+            -webkit-animation: a-spectrumCycle-color .5s steps(8) infinite;
+            -moz-animation: a-spectrumCycle-color .5s steps(8) infinite;
+            animation: a-spectrumCycle-color .5s steps(8) infinite;
+            -webkit-animation-delay: .05s;
+            -moz-animation-delay: .05s;
+            animation-delay: .05s
+         }
+
+         .contact-cta:hover .contact-cta-word span:nth-child(1n+2) {
+            -webkit-transition: none;
+            -moz-transition: none;
+            transition: none;
+            -webkit-animation: a-spectrumCycle-color .5s steps(8) infinite;
+            -moz-animation: a-spectrumCycle-color .5s steps(8) infinite;
+            animation: a-spectrumCycle-color .5s steps(8) infinite;
+            -webkit-animation-delay: .1s;
+            -moz-animation-delay: .1s;
+            animation-delay: .1s
+         }
+
+         .contact-cta:hover .contact-cta-word span:nth-child(1n+3) {
+            -webkit-transition: none;
+            -moz-transition: none;
+            transition: none;
+            -webkit-animation: a-spectrumCycle-color .5s steps(8) infinite;
+            -moz-animation: a-spectrumCycle-color .5s steps(8) infinite;
+            animation: a-spectrumCycle-color .5s steps(8) infinite;
+            -webkit-animation-delay: .15s;
+            -moz-animation-delay: .15s;
+            animation-delay: .15s
+         }
+
+         .contact-cta:hover .contact-cta-word span:nth-child(1n+4) {
+            -webkit-transition: none;
+            -moz-transition: none;
+            transition: none;
+            -webkit-animation: a-spectrumCycle-color .5s steps(8) infinite;
+            -moz-animation: a-spectrumCycle-color .5s steps(8) infinite;
+            animation: a-spectrumCycle-color .5s steps(8) infinite;
+            -webkit-animation-delay: .2s;
+            -moz-animation-delay: .2s;
+            animation-delay: .2s
+         }
+
+         .contact-cta:hover .contact-cta-word span:nth-child(1n+5) {
+            -webkit-transition: none;
+            -moz-transition: none;
+            transition: none;
+            -webkit-animation: a-spectrumCycle-color .5s steps(8) infinite;
+            -moz-animation: a-spectrumCycle-color .5s steps(8) infinite;
+            animation: a-spectrumCycle-color .5s steps(8) infinite;
+            -webkit-animation-delay: .25s;
+            -moz-animation-delay: .25s;
+            animation-delay: .25s
+         }
+
+         .contact-cta:hover .contact-cta-word span:nth-child(1n+6) {
+            -webkit-transition: none;
+            -moz-transition: none;
+            transition: none;
+            -webkit-animation: a-spectrumCycle-color .5s steps(8) infinite;
+            -moz-animation: a-spectrumCycle-color .5s steps(8) infinite;
+            animation: a-spectrumCycle-color .5s steps(8) infinite;
+            -webkit-animation-delay: .3s;
+            -moz-animation-delay: .3s;
+            animation-delay: .3s
+         }
+
+         .contact-cta:hover .contact-cta-word span:nth-child(1n+7) {
+            -webkit-transition: none;
+            -moz-transition: none;
+            transition: none;
+            -webkit-animation: a-spectrumCycle-color .5s steps(8) infinite;
+            -moz-animation: a-spectrumCycle-color .5s steps(8) infinite;
+            animation: a-spectrumCycle-color .5s steps(8) infinite;
+            -webkit-animation-delay: .35s;
+            -moz-animation-delay: .35s;
+            animation-delay: .35s
+         }
+
+         .contact-cta:hover .contact-cta-word span:nth-child(1n+8) {
+            -webkit-transition: none;
+            -moz-transition: none;
+            transition: none;
+            -webkit-animation: a-spectrumCycle-color .5s steps(8) infinite;
+            -moz-animation: a-spectrumCycle-color .5s steps(8) infinite;
+            animation: a-spectrumCycle-color .5s steps(8) infinite;
+            -webkit-animation-delay: .4s;
+            -moz-animation-delay: .4s;
+            animation-delay: .4s
+         }
+
+         .contact-cta:hover .contact-cta-word span:nth-child(1n+9) {
+            -webkit-transition: none;
+            -moz-transition: none;
+            transition: none;
+            -webkit-animation: a-spectrumCycle-color .5s steps(8) infinite;
+            -moz-animation: a-spectrumCycle-color .5s steps(8) infinite;
+            animation: a-spectrumCycle-color .5s steps(8) infinite;
+            -webkit-animation-delay: .45s;
+            -moz-animation-delay: .45s;
+            animation-delay: .45s
+         }
+
+         .contact-cta:hover .contact-cta-word span:nth-child(1n+10) {
+            -webkit-transition: none;
+            -moz-transition: none;
+            transition: none;
+            -webkit-animation: a-spectrumCycle-color .5s steps(8) infinite;
+            -moz-animation: a-spectrumCycle-color .5s steps(8) infinite;
+            animation: a-spectrumCycle-color .5s steps(8) infinite;
+            -webkit-animation-delay: .5s;
+            -moz-animation-delay: .5s;
+            animation-delay: .5s
+         }
+
+         .contact-cta:hover .contact-cta-word span:nth-child(1n+11) {
+            -webkit-transition: none;
+            -moz-transition: none;
+            transition: none;
+            -webkit-animation: a-spectrumCycle-color .5s steps(8) infinite;
+            -moz-animation: a-spectrumCycle-color .5s steps(8) infinite;
+            animation: a-spectrumCycle-color .5s steps(8) infinite;
+            -webkit-animation-delay: .55s;
+            -moz-animation-delay: .55s;
+            animation-delay: .55s
+         }
+
+         .contact-cta:hover .contact-cta-word span:nth-child(1n+12) {
+            -webkit-transition: none;
+            -moz-transition: none;
+            transition: none;
+            -webkit-animation: a-spectrumCycle-color .5s steps(8) infinite;
+            -moz-animation: a-spectrumCycle-color .5s steps(8) infinite;
+            animation: a-spectrumCycle-color .5s steps(8) infinite;
+            -webkit-animation-delay: .6s;
+            -moz-animation-delay: .6s;
+            animation-delay: .6s
+         }
+
+         .contact-cta:hover .contact-cta-word span:nth-child(1n+13) {
+            -webkit-transition: none;
+            -moz-transition: none;
+            transition: none;
+            -webkit-animation: a-spectrumCycle-color .5s steps(8) infinite;
+            -moz-animation: a-spectrumCycle-color .5s steps(8) infinite;
+            animation: a-spectrumCycle-color .5s steps(8) infinite;
+            -webkit-animation-delay: .65s;
+            -moz-animation-delay: .65s;
+            animation-delay: .65s
+         }
+
+         .contact-cta:hover .contact-cta-word span:nth-child(1n+14) {
+            -webkit-transition: none;
+            -moz-transition: none;
+            transition: none;
+            -webkit-animation: a-spectrumCycle-color .5s steps(8) infinite;
+            -moz-animation: a-spectrumCycle-color .5s steps(8) infinite;
+            animation: a-spectrumCycle-color .5s steps(8) infinite;
+            -webkit-animation-delay: .7s;
+            -moz-animation-delay: .7s;
+            animation-delay: .7s
+         }
+
+         .contact-cta:hover .contact-cta-word span:nth-child(1n+15) {
+            -webkit-transition: none;
+            -moz-transition: none;
+            transition: none;
+            -webkit-animation: a-spectrumCycle-color .5s steps(8) infinite;
+            -moz-animation: a-spectrumCycle-color .5s steps(8) infinite;
+            animation: a-spectrumCycle-color .5s steps(8) infinite;
+            -webkit-animation-delay: .75s;
+            -moz-animation-delay: .75s;
+            animation-delay: .75s
+         }
+
+         .contact-cta:hover .contact-cta-word span:nth-child(1n+16) {
+            -webkit-transition: none;
+            -moz-transition: none;
+            transition: none;
+            -webkit-animation: a-spectrumCycle-color .5s steps(8) infinite;
+            -moz-animation: a-spectrumCycle-color .5s steps(8) infinite;
+            animation: a-spectrumCycle-color .5s steps(8) infinite;
+            -webkit-animation-delay: .8s;
+            -moz-animation-delay: .8s;
+            animation-delay: .8s
+         }
+
+         .contact-cta:hover .contact-cta-word span:nth-child(1n+17) {
+            -webkit-transition: none;
+            -moz-transition: none;
+            transition: none;
+            -webkit-animation: a-spectrumCycle-color .5s steps(8) infinite;
+            -moz-animation: a-spectrumCycle-color .5s steps(8) infinite;
+            animation: a-spectrumCycle-color .5s steps(8) infinite;
+            -webkit-animation-delay: .85s;
+            -moz-animation-delay: .85s;
+            animation-delay: .85s
+         }
+
+         .contact-cta:hover .contact-cta-word span:nth-child(1n+18) {
+            -webkit-transition: none;
+            -moz-transition: none;
+            transition: none;
+            -webkit-animation: a-spectrumCycle-color .5s steps(8) infinite;
+            -moz-animation: a-spectrumCycle-color .5s steps(8) infinite;
+            animation: a-spectrumCycle-color .5s steps(8) infinite;
+            -webkit-animation-delay: .9s;
+            -moz-animation-delay: .9s;
+            animation-delay: .9s
+         }
+
+         .contact-cta:hover .contact-cta-word span:nth-child(1n+19) {
+            -webkit-transition: none;
+            -moz-transition: none;
+            transition: none;
+            -webkit-animation: a-spectrumCycle-color .5s steps(8) infinite;
+            -moz-animation: a-spectrumCycle-color .5s steps(8) infinite;
+            animation: a-spectrumCycle-color .5s steps(8) infinite;
+            -webkit-animation-delay: .95s;
+            -moz-animation-delay: .95s;
+            animation-delay: .95s
+         }
+
+         .contact-cta:hover .contact-cta-word span:nth-child(1n+20) {
+            -webkit-transition: none;
+            -moz-transition: none;
+            transition: none;
+            -webkit-animation: a-spectrumCycle-color .5s steps(8) infinite;
+            -moz-animation: a-spectrumCycle-color .5s steps(8) infinite;
+            animation: a-spectrumCycle-color .5s steps(8) infinite;
+            -webkit-animation-delay: 1s;
+            -moz-animation-delay: 1s;
+            animation-delay: 1s
+         }
+
+         .contact-cta:hover .arrow .tail {
+            -webkit-transform: scaleX(1.5);
+            -moz-transform: scaleX(1.5);
+            -ms-transform: scaleX(1.5);
+            -o-transform: scaleX(1.5);
+            transform: scaleX(1.5)
+         }
+         .contact-cta i.arrow{
+            transition: all .4s ease-out;
+            display: inline-block;
+            transform-origin: left;
+            line-height: 100%;
+         }
+         .contact-cta:hover i.arrow{
+            transform: scaleX(1.2);
+         }
+
+
+         @keyframes a-spectrumCycle-color {
+
+            0%,
+            11.4% {
+               color: #6424D2
+            }
+
+            11.5%,
+            23% {
+               color: #4174E9
+            }
+
+            23.1%,
+            34.4% {
+               color: #DF1068
+            }
+
+            34.5%,
+            45.7% {
+               color: #FE4E51
+            }
+
+            45.8%,
+            57.1% {
+               color: #CBFB95
+            }
+
+            57.2%,
+            68.5% {
+               color: #FB5D54
+            }
+
+            68.6%,
+            80% {
+               color: #FFB84C
+            }
+
+            80.1%,
+            91.4% {
+               color: #3BDEB3
+            }
+
+            91.5%,
+            100% {
+               color: #7F0C8D
+            }
+         }
+      </style>
+   </head>
+
+   <body>
+      <a class="contact-cta" href="https://pipixels.com">
+         <span class="contact-cta-word">
+            <span class="letter_1">G</span>
+            <span class="letter_2">e</span>
+            <span class="letter_3">t</span>
+            <span class="letter_4"> </span>
+            <span class="letter_5">i</span>
+            <span class="letter_6">n</span>
+            <span class="letter_7"> </span>
+            <span class="letter_8">t</span>
+            <span class="letter_9">o</span>
+            <span class="letter_10">u</span>
+            <span class="letter_11">c</span>
+            <span class="letter_12">h</span>
+         </span>
+         <i class="arrow fas fa-long-arrow-right"></i>
+      </a>
+   </body>
+
+</html>
